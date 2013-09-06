@@ -1,0 +1,77 @@
+body {
+	background-color: #CAFFDD;
+	text-align: center;
+}
+#super-body {
+	min-width: 100px;
+	/*max-width: 940px;*/
+	background-color: white;
+	margin: 0 auto;
+	padding: 10px 0 0 0;
+	width: 980px;
+	border-radius: 15px;
+}
+#super-body h5 {
+	clear: right;
+	float: right;
+	font-style: italic;
+	margin: 15px 0 18px 0;
+	color: gray;
+
+}
+#header-photo {
+	padding-top: 5px;
+	padding-bottom: 2px;
+	background-color: black;
+	text-align: center;
+}
+#menu {
+	background-color: black;
+	max-width: 940px;
+	height: 25px;
+	margin: 0 auto;
+	vertical-align: baseline;
+}
+#menu ul {
+	display: inline;
+	text-align: center;
+}
+#menu ul li{
+	list-style: none;
+	display: inline;
+	padding: 4
+
+}
+#menu ul li a{
+	text-align: center;
+	position:center;
+	text-decoration: none;
+	height: 50px;
+	width: 50px;
+	border: 2px;
+	border-color: silver;
+	color: white;
+	/*border-radius: 5px;*/
+	background: black;
+	box-shadow: 0 2px 0 black;
+	text-shadow: 0 2px 2px rgba(255, 255, 255, 0.2);
+
+}
+#main-body {
+	/*text-align: center;*/
+	min-width: 100px;
+	max-width: 940px;
+	height: 200px;
+	background-color: white;
+	margin: 0 auto;
+}
+#not-my-icons {
+	text-align: left;
+	border: 0;
+ 	margin: 0px 0px 0px 5px;
+}
+#not-my-icons a {
+	background-color: transparent;
+}
+#blog-body {
+	text-align: left;

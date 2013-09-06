@@ -1,0 +1,56 @@
+<html>
+<head>
+<title>Greatest Page Ever!</title>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/stylesheet.css') }}"/>
+<link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='css/theme.css') }}"/>
+<script src="http://code.jquery.com/jquery-1.9.1.js"></script>
+<script src="http://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
+<script  type='text/javascript' src="{{ url_for('static', filename='js/script.js') }}"></script>
+</head>
+<body>
+<div id='super-body'>
+	<h5>Thoughts On Life & Linux</h5>
+{% if pic == 0 %}
+<img id='header-photo' src="{{ url_for('static', filename='img/header_images/bay_bridge.jpg') }}">
+{% elif pic == 1 %}
+<img id='header-photo' src="{{ url_for('static', filename='img/header_images/cadillac_ranch.jpg') }}">
+{% elif pic == 2 %}
+<img id='header-photo' src="{{ url_for('static', filename='img/header_images/french_locks.jpg') }}">
+{% elif pic == 3 %}
+<img id='header-photo' src="{{ url_for('static', filename='img/header_images/golden_gate_bridge.jpg') }}">
+{% elif pic == 4 %}
+<img id='header-photo' src="{{ url_for('static', filename='img/header_images/mayan_ruins.jpg') }}">
+{% elif pic == 5 %}
+<img id='header-photo' src="{{ url_for('static', filename='img/header_images/mexico_beach.jpg') }}">
+{% elif pic == 6 %}
+<img id='header-photo' src="{{ url_for('static', filename='img/header_images/sd_zoo.jpg') }}">
+{% elif pic == 7 %}
+<img id='header-photo' src="{{ url_for('static', filename='img/header_images/so_cal_beach.jpg') }}">
+{% endif %}
+<div id='menu'>
+	<ul>
+		<li>
+			<a href='/'>Home</a>
+		</li>
+		<li>
+			<a href="/blog">Linux & Stuff</a>
+		</li>
+		<li>
+			<a href="code.php">Code</a>
+		</li>
+		<li>
+			<a href='/about'>About Me</a>
+		</li>
+	</ul>
+</div>
+<div id='main-body'>
+{% block content %}
+{% endblock %}
+</div>
+<div id='not-my-icons'>
+<a href="https://github.com/jeremiah1066"><img borader="0" src="{{ url_for('static', filename='img/GitHub-Mark-32px.png') }}" width="32" height="32"/></a>
+<a href="http://www.linkedin.com/pub/jeremiah-williams/31/75a/4b"><img boarder="0" src="{{ url_for('static', filename='img/linkedin-trans.png') }}"width="38" height="32"/></a>
+</div>
+</div>
+</body>
+</html>

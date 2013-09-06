@@ -1,0 +1,6 @@
+{% extends "layout.html" %}
+{% block content %}
+{% for titles in title_list %}
+<a href="blog/{{ titles['title'] }}">{{ titles['title'] }}</a><br>
+{% endfor %}
+{% endblock %}
