@@ -2,6 +2,6 @@
 {% block content %}
 {% for title_post in title_list %}
 <h3>{{ title_post['title'] }}</h3>
-<p>{{ title_post['content'] }}</p>
+<p>{{ title_post['content']|safe }}</p>
 {% endfor %}
 {% endblock %}
